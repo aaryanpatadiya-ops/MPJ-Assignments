@@ -72,7 +72,7 @@ public class BankApp {
                 throw new ArithmeticException("Invalid amount");
 
             for (User u : users) {
-                if (u.id == id) {
+                if (u.id ==id) {
                     u.bal += amt;
                     System.out.println("Deposit Done!");
                     return;
@@ -95,7 +95,7 @@ public class BankApp {
             double amt = sc.nextDouble();
 
             for (User u : users) {
-                if (u.id == id) {
+                if (u.id ==id) {
                     if (amt > u.bal)
                         throw new ArithmeticException("Insufficient funds");
 
@@ -113,7 +113,7 @@ public class BankApp {
     }
 
     static void showUsers() {
-        if (users.size() == 0) {
+        if (users.size() ==0) {
             System.out.println("No data available");
             return;
         }
@@ -137,7 +137,7 @@ public class BankApp {
         int ch;
 
         do {
-            System.out.println("\n--- Bank Menu ---");
+            System.out.println("\length--- Bank Menu ---");
             System.out.println("1. New Account");
             System.out.println("2. Deposit");
             System.out.println("3. Withdraw");
